@@ -35,7 +35,7 @@ request_log <- tribble(
 
 # CKAN API call -----------------------------------------------------------
 
-sync_usage_data <- function(offset = 0, limit = 50) {
+sync_usage_data <- function(offset = 0, limit = 25) {
   
   # Generic CKAN action helper
   response <- ckan_action(
@@ -53,7 +53,7 @@ sync_usage_data <- function(offset = 0, limit = 50) {
 sync_all_usage_data <- function(starting_offset = 0) {
   
   has_more <- TRUE
-  test_iteration_limit <- 8
+  test_iteration_limit <- 200
   iteration <- 0
   next_offset <- starting_offset
   
@@ -101,7 +101,7 @@ sync_all_usage_data <- function(starting_offset = 0) {
     
     iteration <- iteration + 1
     
-    Sys.sleep(2)
+    Sys.sleep(10)
     
   }
   
