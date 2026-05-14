@@ -35,7 +35,7 @@ request_log <- tribble(
 
 # CKAN API call -----------------------------------------------------------
 
-sync_usage_data <- function(offset = 0, limit = 25) {
+sync_usage_data <- function(offset = 0, limit = 20) {
   
   # Generic CKAN action helper
   response <- ckan_action(
