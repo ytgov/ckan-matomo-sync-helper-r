@@ -89,7 +89,7 @@ sync_all_usage_data <- function(starting_offset = 0) {
   
 }
 
-# x <- sync_usage_data(0)
+
 sync_all_usage_data()
 
 
