@@ -14,24 +14,6 @@ request_log <- tribble(
   ~response_time_seconds
 )
 
-# # Logging helper function
-# add_request_log_entry <- function(...) {
-#   
-#   log_text <- str_c(...)
-#   
-#   new_row = tibble_row(
-#     time = now(),
-#     message = log_text
-#   )
-#   
-#   run_log <<- run_log |>
-#     bind_rows(
-#       new_row
-#     )
-#   
-#   cat(log_text, "\n")
-# }
-
 
 # CKAN API call -----------------------------------------------------------
 
