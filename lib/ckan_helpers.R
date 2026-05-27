@@ -46,6 +46,8 @@ if(file_exists(".env")) {
     key = Sys.getenv("ckan_api_token")
   )
   
+  add_log_entry("Using server ", ckan_url)
+  
 } else {
   stop("No .env file found, create it before running this script.")
 }
