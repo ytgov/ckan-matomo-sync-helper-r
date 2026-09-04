@@ -1,0 +1,8 @@
+services:
+  sync:
+    build: .
+    image: ckan-matomo-sync-helper-r:latest
+    env_file:
+      - .env
+    volumes:
+      - ./log:/app/log

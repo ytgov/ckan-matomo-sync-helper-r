@@ -1,0 +1,12 @@
+.env
+.env.example
+.git
+.gitignore
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*~$*
+input
+log/*.csv
+README*
